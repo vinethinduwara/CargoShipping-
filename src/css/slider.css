@@ -1,0 +1,140 @@
+.slider-section {
+  position: relative;
+  display: flex;
+  height: 90vh;
+  min-height: 600px;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-image-area {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  margin-right: 480px;
+}
+
+.slider-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+  margin-left: 450px;
+  
+}
+
+.slider-content-area {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  bottom: 0;
+  width: 48%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.slider-content-box {
+  background: #fff;
+  padding: 60px 48px 60px 80px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.04);
+  border-radius: 0;
+  max-width: 520px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.slider-tag {
+  color: #ffcc00;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.slider-title {
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #111;
+  font-weight: 600;
+}
+
+.slider-title span {
+  color: #ffcc00;
+  font-weight: 800;
+}
+
+.slider-desc {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 36px;
+  max-width: 420px;
+}
+
+.slider-button {
+  background-color: #ffcc00;
+  color: #fff;
+  padding: 16px 36px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+.slider-button:hover {
+  background: #e6b800;
+}
+
+.slider-nav-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #ffcc00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 28px;
+  border-radius: 0 8px 0 0;
+  font-size: 18px;
+  z-index: 3;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  min-height: unset;
+}
+
+.slider-nav-index {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.slider-nav-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.slider-nav-arrow {
+  background: transparent;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 3px;
+  transition: background 0.2s;
+  user-select: none;
+}
+.slider-nav-arrow:hover {
+  background: rgba(255,255,255,0.18);
+}
