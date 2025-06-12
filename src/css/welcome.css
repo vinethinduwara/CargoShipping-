@@ -1,0 +1,148 @@
+.welcome {
+  background-color: #fff;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-stack {
+  flex: 1 1 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  position: relative;
+}
+
+.image-stack-inner {
+  position: relative;
+  width: 320px;
+  height: 340px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.image-back {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  height: 260px;
+  border-radius: 8px;
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+.shape-parallelogram {
+  position: absolute;
+  left: -40px;
+  top: 60px;
+  z-index: 2;
+}
+
+.shape-triangle {
+  position: absolute;
+  left: -20px;
+  top: 180px;
+  z-index: 2;
+}
+
+.image-front {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 180px;
+  height: 240px;
+  border-radius: 8px;
+  z-index: 3;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+.stat-tag {
+  position: absolute;
+  bottom: -30px;
+  left: 120px;
+  background-color: #ff6a2b;
+  color: #fff;
+  padding: 18px 32px;
+  border-radius: 6px;
+  z-index: 3;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+  font-weight: 500;
+}
+
+.stat-number {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-text {
+  font-size: 13px;
+  display: block;
+  margin-top: 4px;
+}
+
+.welcome-text {
+  max-width: 500px;
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.welcome-text h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #ff6200;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.welcome-desc {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.more-btn {
+  background-color: #fff;
+  padding: 12px 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+  border-radius: 6px;
+  border: 1px solid #ff6a2b;
+  display: inline-block;
+  margin-top: 18px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.more-btn:hover {
+  background-color: #ff6a2b;
+  color: #fff;
+}
